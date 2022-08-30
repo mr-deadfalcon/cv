@@ -1,4 +1,4 @@
 # My CV
 
-My first html site on Github.
+My first html page on Github.
 
