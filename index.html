@@ -3,51 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>Denis resume</title>
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-        <table>
-            <tr>
-                <td><img height="200" src="i.webp" alt="my photo"></td>
-                <td>
-                    <h1>Овчинников Денис</h1>
-                    <p><em>Я технический архитектор компании <strong>АО "Северсталь-Инфоком"</strong> </em></p>
-                    <p>Я люблю читать книги и смотреть фильмы</p>
-                </td>
-            </tr>
-        </table>
+    <div id="top"></div>
+    <div class="container">
+        <div class="info">
+            <div>
+                <img class="avatar" src="i.webp" alt="my photo">
+            </div>
+            
+            <div class="info-text">
+                <h1>Овчинников Денис</h1>
+                <p>Я технический архитектор компании <strong>АО "Северсталь-Инфоком"</strong></p>
+                <p>Я люблю читать книги и смотреть фильмы</p>
  
-        <hr>
+                <h4>Мои социальные сети</h4>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="https://telegram.com" target="_blank">Telegram</a>
+            </div>
+        </div>    
 
-        <h2>Мои социальные сети</h2>
-        <ul type="square">
-            <li ><a href="https://instagram.com" target="_blank">Instagram</a></li>
-            <li><a href="https://telegram.com" target="_blank">Telegram</a></li>
-        </ul>
+        <div class="card bg-yellow" >
+            <h2>Мои хобби</h2>
+            <ol class="list">
+                <li>Книги</li>
+                <li>Сериалы</li>
+                <li>Автомобили</li>
+                <li>Программирование</li>
+            </ol>
+        </div>
 
-        <hr>
-
-        <h2>Мои хобби</h2>
-        <ol type="I">
-            <li>Книги</li>
-            <li>Сериалы</li>
-            <li>Автомобили</li>
-            <li>Программирование</li>
-        </ol>
-
-        <hr>
-
-        <h2>Youtube curses</h2>
-        <a href="youtube.html">Посмотреть список</a>
-
-        <hr>
-
-        <h2>Опыт работы</h2>
-        <table>
-                <tr>
-                    <th>Место работы</th>
-                    <th>Должность</th>
-                    <th>Год</th>
-                </tr>
+        <div class="card bg-green">
+            <h2>Опыт работы</h2>
+            <table class="table">
                 <tr>
                     <td>ЧГУ</td>
                     <td>Инпектор</td>
@@ -61,25 +50,57 @@
                 <tr>
                     <td>АО "Северсталь-Инфоком"</td>
                     <td>Технический архитектор</td>
-                    <td>2010 - настоящее время</td>
+                    <td>2010 - 2022</td>
                 </tr>
-        </table>
+                <tr>
+                    <td>Фриланс</td>
+                    <td>Разработчик</td>
+                    <td>2022 - now</td>
+                </tr>
 
-        <hr>
+            </table>
+        </div>
 
-        <h2>Связаться со мной</h2>
-        <form action="#">
-            <label for="name">Ваше имя:</label>
-            <input id="name" type="text" placeholder="Введите ваше имя">
-            <br><br>
-            <label for="email">Ваш email:</label>
-            <input id="email" type="text" placeholder="Введите ваш email">
-            <br><br>
-            <label for="text">Ваше сообщение:</label><br>
-            <textarea id="text" placeholder="Введите ваше сообщение"></textarea>
-            <br><br>
-            <input type="submit" value="Связаться!">
-        </form>
+        <div class="card bg-red">
+            <h2>Пройденные курсы</h2>
+            <ul class="link-list">
+                <li>
+                    <a href="https://www.youtube.com/watch?v=DOEtVdkKwcU" target="_blank">
+                        (YouTube) Минин В. - HTML. Практический Курс.
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://www.youtube.com/watch?v=zZBiln_2FhM" target="_blank">
+                        (YouTube) Минин В. - Git и GitHub.
+                    </a>
+                </li>
+            </ul>
+        </div>
 
+        <div class="contact">
+            <h2>Связаться со мной</h2>
+            <form action="#">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input id="name" type="text" placeholder="Введите ваше имя">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Ваш email:</label>
+                        <input id="email" type="text" placeholder="Введите ваш email">
+                    </div>
+                </div>
+                
+                <div class="form-group">    
+                    <label for="text">Ваше сообщение:</label>
+                    <textarea id="text" placeholder="Введите ваше сообщение"></textarea>
+                </div>
+
+                <input class="btn" type="submit" value="Связаться!">
+            </form>
+        </div>
+    </div>
 </body>
 </html>
